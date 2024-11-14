@@ -36,3 +36,252 @@
     transform: rotate(360deg);
   }
 }
+
+/* User Container Styling */
+.users-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap cards to the next line */
+  justify-content: center; /* Center cards horizontally */
+  padding: 2rem;
+}
+
+/* User Card Styling */
+.user-card {
+  background-color: white; /* White background for cards */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 1rem; /* Margin between cards */
+  padding: 1rem; /* Padding inside cards */
+  width: 250px; /* Fixed width for user cards */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.user-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+/* User Info Styling */
+.user-info h4 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.2rem; /* Increase font size */
+}
+
+.user-info p {
+  margin: 0.5rem 0; /* Space between paragraphs */
+  color: #555; /* Dark gray text color */
+}
+
+/* Button Styling */
+.user-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 15px; /* Padding for top/bottom and left/right */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+  margin: 5px; /* Margin between buttons */
+}
+
+.user-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.user-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.user-button:active {
+  background-color: #004494; /* Even darker shade on active */
+  transform: scale(0.95); /* Shrink button on click */
+}
+
+/* Search Bar Styling */
+.search-container {
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin: 20px 0; /* Space above and below the search bar */
+}
+
+.search-bar {
+  width: 300px; /* Width of the search bar */
+  padding: 10px; /* Padding inside the search bar */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+.search-bar:focus {
+  outline: none; /* Remove outline */
+  border-color: #007bff; /* Change border color on focus */
+}
+
+/* Center the entire form on the page */
+.modify-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f4f6f8;
+}
+
+/* Form container styling */
+.modify-user-form {
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* Form heading */
+.modify-user-form h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.modify-user-form label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Input field styling */
+.modify-user-form input[type="text"],
+.modify-user-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Input focus styling */
+.modify-user-form input[type="text"]:focus,
+.modify-user-form input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Button styling */
+.modify-user-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modify-user-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Toast container styling */
+.Toastify__toast-container {
+  font-family: Arial, sans-serif;
+}
+
+.Toastify__toast--error {
+  background-color: #d9534f;
+}
+
+/* Container for the Add User form */
+.add-user-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.add-user-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form styling */
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label and input group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional responsive styles */
+@media (max-width: 600px) {
+  .add-user-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .submit-button {
+      width: 100%;
+  }
+}
